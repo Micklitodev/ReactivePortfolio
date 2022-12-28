@@ -1,111 +1,167 @@
 :root {
- --light: rgb(204,204,204); 
- --bradius: 25px;
-
+  --light: rgb(150, 215, 238);
+  --bradius: 25px;
+  --darker: rgb(5, 87, 116);
+  --darkest: rgb(0, 50, 60);
 }
-
-
-section img:hover {
-    opacity: .7;
-}
-
-section div {
-    border: solid black;
-    padding: 5px;
-    display: inline-block;
-    margin: 10px;
-}
-
 
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-}
-
-
-#projects {
-    display: inline;
-}
+  color: var(--darker);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 900
   
-#about-me {
-   position: relative;
-   bottom: 200px;
-   left: 300px;
-   
 }
 
-#about-me h2 {
-    position:  relative;
-}
-
-p {
-    max-width: 700px;
-    max-height: 600px;
-}
-
-h2 {
-    display: inline;
-}
-
-
-h3 {
-    display:flex; 
-    align-items: center;
-    justify-content: center;
-}
-
- 
-.pfp {
-    margin: auto;
-    border-radius: 200px;
-    max-height: 200px;
-    margin-top: 20px;   
-    margin-left: 20px;
-
-}
-
-body {
-    background-color: rgb(168, 200, 130);
+text {
+    float: right;
+    margin-top: 95px;
+    background-color: var(--light);
+    font-size: 30px;
+    margin-right: 70px;
+    font-weight: bold;
 }
 
 a {
-    text-decoration: none;
-    color: var(--light) 
+  color: var(--light);
 }
 
-a img {
-    max-width: 700px;
-    max-height: 300px;
+p {
+  margin-left: 20px;
+  overflow: hidden;
+
+  
+}
+
+h2 {
+  font-size: 35px;
+  padding: 50px;
+  border-right: solid var(--darker);
+  max-width: 100px;
 }
 
 header {
-    padding: 10px;
-    background-color: darkslategray;
+  padding: 5px;
+  background-color: rgb(53, 55, 55);
+}
 
-  }
-  
-  header h1 {
-    display: inline-block;
-    font-size: 28px;
-    color: var(--light)
-
-  }
+h1 {
+  display: inline-block;
+  font-size: 28px;
+  margin-left: 20px;
+  color: rgb(53, 55, 55);
+  background-color: var(--light); 
+  padding: 5px;
+  font-family: 'Prosto One', cursive;
+}
 
 header li {
-    display: inline-block;
-    margin-left: 25px;
+  display: inline-block;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+}
+
+.headerimg {
+  background-image: url("./images/blueheader.png");
+  height: 150px;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 50px;
+}
+
+#about-me h3 {
+  margin-left: 50px;
+}
+
+.pfp {
+  margin: auto;
+  border-radius: 200px;
+  max-height: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.projects {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 230px;
+} 
+
+.project-two, .project-three {
+   position: relative;
+   left: 100px;
+}
 
 
+.projects img {
+  border-radius: var(--bradius);
+  max-height: 250px;
+  max-width: 455px;
+  margin-left: 20px;
+}
+
+.projects h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#project-one img{
+    min-width: 1000px;
+    min-height: 500px;
+
+}
+
+.favicondiv {
+    margin-left: 150px
+}
+
+.favicon {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+#contact h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
   }
+}
 
-  nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-   
-  }
+a img:hover {
+  opacity: 0.7;
+  box-shadow: 5px 5px 5px var(--light);
+}
 
-  div img {
-    border-radius: var(--bradius);
-  }
+/* googlefontapi */
 
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Prosto+One&family=Ubuntu:wght@300&display=swap');
 
+/*
+----declarations avaliable----
+
+font-family: 'Caramel', cursive;
+font-family: 'Prosto One', cursive;
+font-family: 'Ubuntu', sans-serif; 
+
+*/
