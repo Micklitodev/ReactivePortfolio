@@ -1,0 +1,111 @@
+:root {
+ --light: rgb(204,204,204); 
+ --bradius: 25px;
+
+}
+
+
+section img:hover {
+    opacity: .7;
+}
+
+section div {
+    border: solid black;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+
+#projects {
+    display: inline;
+}
+  
+#about-me {
+   position: relative;
+   bottom: 200px;
+   left: 300px;
+   
+}
+
+#about-me h2 {
+    position:  relative;
+}
+
+p {
+    max-width: 700px;
+    max-height: 600px;
+}
+
+h2 {
+    display: inline;
+}
+
+
+h3 {
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+ 
+.pfp {
+    margin: auto;
+    border-radius: 200px;
+    max-height: 200px;
+    margin-top: 20px;   
+    margin-left: 20px;
+
+}
+
+body {
+    background-color: rgb(168, 200, 130);
+}
+
+a {
+    text-decoration: none;
+    color: var(--light) 
+}
+
+a img {
+    max-width: 700px;
+    max-height: 300px;
+}
+
+header {
+    padding: 10px;
+    background-color: darkslategray;
+
+  }
+  
+  header h1 {
+    display: inline-block;
+    font-size: 28px;
+    color: var(--light)
+
+  }
+
+header li {
+    display: inline-block;
+    margin-left: 25px;
+
+
+  }
+
+  nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+   
+  }
+
+  div img {
+    border-radius: var(--bradius);
+  }
+
+
