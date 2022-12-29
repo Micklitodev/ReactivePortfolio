@@ -2,7 +2,7 @@
 
 ## Link
 
-Click [here](--addvalue--) to go to the live link.
+Click [here](https://micklitodev.github.io/ReactivePortfolio/) to go to the live link.
 
 ## ScreenShot
 
