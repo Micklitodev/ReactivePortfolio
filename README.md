@@ -2,27 +2,25 @@
 
 ## Link
 
-Click [here](--addvalue--) to go to the live link. 
+Click [here](--addvalue--) to go to the live link.
 
+## ScreenShot
 
-## ScreenShot 
-
-![Screenshot of finished website product](./assets/images/Screenshot%201.png?raw=true "Porfolio")
-![Screenshot of finished website product part 2](./assets/images/Screenshot%202%20.png?raw=true)
-![Screenshot of finished website product part 3](./assets/images/Screenshot%203.png?raw=true)
+![Screenshot of finished website product part 1](./assets/images/screenshot1.png?raw=true)
+![Screenshot of finished website product part 2](./assets/images/screenshot2.png?raw=true)
 
 ## Description
 
-Sleek design was kept in mind to order to ensure a pleasant user interface please read each section to better understand our companies goals.
+Please read each section to better understand my porfolios goals.
 
-- Why did you build this project? to futher practice and excell in my goal to become and efficent and proper web developer. 
-- What problem does it solve? It serves as an information guide to understanding Horiseon and its goals. 
-- What did you learn?  I have learned the skills I needed to be able to create and optimize html and css documents whilist building this webpage.
- 
+- Why did you build this project? To Better display my skills and assets as a software developer to hiring jobs and companies.
+- What problem does it solve? It defeats a standard resume by allowing cross examination of technical skills and software development practice and application skills, promoting a higher acceptance rate to job inquiries.
 
 ## Usage
 
-To use HORISEON, you can click the hyperlinks to better navigate the index HTML sections.
+To use the portfolio, you can click the hyperlinks to better navigate the index HTML sections, At the project section you
+can click on the images to be directed to live deployed pages. At the bottom of contact me you can click on the github favicon to
+see the projects raw code.
 
 ## Credits
 
