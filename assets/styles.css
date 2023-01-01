@@ -7,7 +7,7 @@
   --darkest: rgb(0, 50, 60);
 }
 
-/* all items follow styles  */
+/* global styles  */
 * {
   color: var(--darker);
   font-family: "Ubuntu", sans-serif;
@@ -35,6 +35,8 @@ a {
 p {
   margin-right: 220px;
   max-width: 700px;
+  min-width: 300px;
+  text-align: center;
 }
 
 h2 {
@@ -42,13 +44,6 @@ h2 {
   padding: 50px;
   border-right: solid var(--darker);
   max-width: 100px;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 /* header  */
@@ -77,18 +72,30 @@ header li {
 nav {
   position: absolute;
   padding-top: 15px;
-  margin-right: 20px;
+  margin-right: 0px;
   top: 15px;
   right: 20px;
 }
 
-.headerimg {
+.header-img {
   background-image: url("./images/blueheader.png");
   height: 150px;
   width: 100%;
 }
 
 /* about me section  */
+
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me p {
+  position: absolute;
+  left: 500px;
+}
 
 #about-me h3 {
   margin-left: 50px;
@@ -106,9 +113,11 @@ nav {
 /* project section  */
 
 .projects {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: column;
   align-items: center;
-  justify-content: center;
+  margin-left: 300px;
   margin-top: 70px;
 }
 
@@ -137,9 +146,9 @@ nav {
   right: 300px;
 }
 
-.projects h2 {
-  position: relative;
-  right: 110px;
+#projects h2 {
+  position: absolute;
+  left: 5px;
 }
 
 .project-one img {
@@ -150,7 +159,7 @@ nav {
   z-index: -1;
 }
 .project-one h3 {
-  position: absolute; 
+  position: absolute;
   padding: 20px;
   left: 20px;
   bottom: 350px;
@@ -159,6 +168,10 @@ nav {
 /* contact section */
 
 #contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-top: 70px;
 }
 
@@ -177,24 +190,6 @@ nav {
   border-radius: 50%;
 }
 
-/* psuedo classes for veiwport changes */
-
-
-/* individual psuedo classes */
-
-@media screen and (max-width: 1000px) {
-  section {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  h2 {
-    display: none;
-  }
-}
-
 /* psuedo class effects */
 
 a img:hover {
@@ -202,62 +197,74 @@ a img:hover {
   box-shadow: 5px 5px 5px var(--light);
 }
 
+/* psuedo classes for veiwport changes */
 
-/* header */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1235px) {
+  /* individual psuedo selectors */
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  /* header */
+
   header,
   .headerimg {
     position: relative;
     max-height: 200px;
   }
-}
 
-@media screen and (max-width: 1000px) {
   nav {
     position: relative;
     top: 1px;
     left: 20px;
   }
-}
+  nav li {
+    display: block;
+    margin: 10px;
+  }
 
-/* about me section */
+  /* about me section */
 
-@media screen and (max-width: 1000px) {
   #about-me {
     display: block;
     margin-left: 20%;
     min-width: 400px;
   }
-}
-
-@media screen and (max-width: 1000px) {
+  #about-me p {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   .pfp {
     display: block;
-    margin-left: 15%;
+    margin-left: 25%;
   }
-}
 
-/* project section */
+  /* project section */
 
-@media screen and (max-width: 1000px) {
+  .projects {
+    margin-left: 0px;
+  }
   .project-one img {
     min-height: 250px;
-    min-width: 455px;
+    min-width: 440px;
     flex-direction: column;
     margin-right: 0px;
     margin-bottom: 0px;
+    margin: 5px;
   }
-}
-
-@media screen and (max-width: 1000px) {
   .project-two,
   .project-three {
     flex-direction: column;
   }
-}
-
-
-@media screen and (max-width: 1000px) {
   .project-one h3 {
     left: 20px;
     bottom: 125px;
@@ -265,18 +272,14 @@ a img:hover {
   }
 }
 
-/* contact psudoclasses */
+/* contact psudoclasses at 1000px or less veiwport */
 
 @media screen and (max-width: 1000px) {
-  .favicondiv,
   #contact {
     display: block;
     margin-left: 50%;
     margin-right: 50%;
   }
-}
-
-@media screen and (max-width: 1000px) {
   .favicondiv h3 {
     display: flex;
     justify-content: center;
